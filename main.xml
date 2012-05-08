@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<category typ="pizza">
+	<id>0001</id>
+		<name size="small">Tomato and Cheese</name>
+		<price>5.50</price>
+	</category>
+	<category typ="pizza">
+	<id>0002</id>
+		<name size="large">Tomato and Cheese</name>
+		<price>9.75</price>
+	</category>
+	<category typ="pizza">
+	<id>0003</id>
+		<name size="small">Onions</name>
+		<price>6.85</price>
+	</category>
+	<category typ="pizza">
+	<id>0004</id>
+		<name size="large">Onions</name>
+		<price>10.85</price>
+	</category>
+	<category typ="pizza">
+	<id>0005</id>
+		<name size="small">Peppers</name>
+		<price>6.85</price>
+	</category>
+		<category typ="pizza">
+		<id>0006</id>
+		<name size="large">Peppers</name>
+		<price>10.85</price>
+	</category>
+	<category typ="spaghetti or ziti">
+		<name size="">Spaghetti or ziti with sauce</name>
+		<price>5.40</price>
+	</category>
+	<category typ="spaghetti or ziti">
+	<id>0007</id>
+		<name size="">Spaghetti or ziti with sausage</name>
+		<price>6.45</price>
+	</category>
+</menu>

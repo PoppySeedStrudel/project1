@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fahrzeug>
+	<auto>
+		<marke typ="passat">Volkswagen</marke>
+		<ps>130</ps>
+		<kraftstoff>diesel</kraftstoff>
+		<farbe>schwarz</farbe>
+	</auto>
+	<auto>
+		<marke typ="3er">BMW</marke>
+		<ps>171</ps>
+		<kraftstoff>diesel</kraftstoff>
+		<farbe>blau</farbe>
+	</auto>
+	<auto>
+		<marke typ="C-Klasse">Mercedes</marke>
+		<ps>135</ps>
+		<kraftstoff>benzin</kraftstoff>
+		<farbe>weiß</farbe>
+	</auto>
+	<auto>
+		<marke typ="A4">Audi</marke>
+		<ps>140</ps>
+		<kraftstoff>benzin</kraftstoff>
+		<farbe>gelb</farbe>
+	</auto>
+	<auto>
+		<marke typ="6">Mazda</marke>
+		<ps>199</ps>
+		<kraftstoff>diesel</kraftstoff>
+		<farbe>silber</farbe>
+	</auto>
+</fahrzeug>

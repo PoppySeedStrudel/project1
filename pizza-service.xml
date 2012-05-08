@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pizza-service>
+	<category name="pizza">
+		<name>Tomato and Cheese</name>
+		<size>sm</size>
+		<price>5.50</price>
+	</category>
+	<category name="pizza">
+		<name>Tomato and Cheese</name>
+		<size>lg</size>
+		<price>9.75</price>
+	</category>
+	<category name="pizza">
+		<name>Onions</name>
+		<size>sm</size>
+		<price>6.85</price>
+	</category>
+	<category name="pizza">
+		<name>Onions</name>
+		<size>lg</size>
+		<price>10.85</price>
+	</category>
+	<category name="special_pizza"></category>
+	<category name="special_dinner"></category>
+	<category name="side_order"></category>
+	<category name="salad"></category>
+	<category name="spaghetti_or_ziti"></category>
+	<category name="pasta"></category>
+	<category name="calzone"></category>
+	<category name="wrap"></category>
+	<category name="grinder"></category>
+</pizza-service>

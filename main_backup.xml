@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<category typ="pizza">
+		<name size="small">Tomato and Cheese</name>
+		<price>5.50</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">Tomato and Cheese</name>
+		<price>9.75</price>
+	</category>
+	<category typ="pizza">
+		<name size="small">Onions</name>
+		<price>6.85</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">Onions</name>
+		<price>10.85</price>
+	</category>
+	<category typ="pizza">
+		<name size="small">Peppers</name>
+		<price>6.85</price>
+	</category>
+	<category typ="pizza">
+		<name size="small">Brocolli</name>
+		<price>6.85</price>
+	</category>
+	<category typ="pizza">
+		<name size="small">Fresh Garlic</name>
+		<price>6.85</price>
+	</category>
+	<category typ="pizza">
+		<name size="small">Mushrooms</name>
+		<price>6.85</price>
+	</category>
+		<category typ="pizza">
+		<name size="small">Fresh Spinach</name>
+		<price>6.85</price>
+	</category>
+		<category typ="pizza">
+		<name size="small">Anchovies</name>
+		<price>6.85</price>
+	</category>
+		<category typ="pizza">
+		<name size="small">Hamburg</name>
+		<price>6.85</price>
+	</category>
+		<category typ="pizza">
+		<name size="small">Pepperoni</name>
+		<price>6.85</price>
+	</category>
+		<category typ="pizza">
+		<name size="small">Sausage</name>
+		<price>6.85</price>
+	</category>
+		<category typ="pizza">
+		<name size="small">Meatball</name>
+		<price>6.85</price>
+	</category>
+		<category typ="pizza">
+		<name size="small">Grilled Chicken</name>
+		<price>7.95</price>
+	</category>
+		<category typ="pizza">
+		<name size="small">Hawaiian</name>
+		<price>7.95</price>
+	</category>
+		<category typ="pizza">
+		<name size="small">2-Way Combo</name>
+		<price>7.95</price>
+	</category>
+		<category typ="pizza">
+		<name size="small">3-Way Combo</name>
+		<price>8.90</price>
+	</category>
+		<category typ="pizza">
+		<name size="small">Extra Cheese</name>
+		<price>1.25</price>
+	</category>
+		<category typ="pizza">
+		<name size="large">Peppers</name>
+		<price>10.85</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">Broccoli</name>
+		<price>10.85</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">Fresh Garlic</name>
+		<price>10.85</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">Mushrooms</name>
+		<price>10.85</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">Fresh Spinach</name>
+		<price>10.85</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">Anchovies</name>
+		<price>10.85</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">Hamburg</name>
+		<price>10.85</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">Pepperoni</name>
+		<price>10.85</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">Sausage</name>
+		<price>10.85</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">Meatball</name>
+		<price>10.85</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">Grilled Chicken</name>
+		<price>11.80</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">Hawaiian</name>
+		<price>11.80</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">2-Way Combo</name>
+		<price>11.80</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">3-Way Combo</name>
+		<price>12.80</price>
+	</category>
+	<category typ="pizza">
+		<name size="large">Extra Cheese</name>
+		<price>1.85</price>
+	</category>
+	<category typ="spaghetti or ziti">
+		<name size="">Spaghetti or ziti with sauce</name>
+		<price>5.40</price>
+	</category>
+	<category typ="spaghetti or ziti">
+		<name size="">Spaghetti or ziti with sausage</name>
+		<price>6.45</price>
+	</category>
+</menu>
