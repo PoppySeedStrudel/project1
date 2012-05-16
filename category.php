@@ -28,7 +28,8 @@ function unique_Category() {
 	echo "<div id=\"fixiert\">";
 	echo "<ul id=\"Navigation\">";
 	foreach ($result as $element){
-		echo "<li><a href=\"category.php?cat=" . $element . "\">" . $element . "</a></li>";
+		//changed to category2
+		echo "<li><a href=\"category2.php?cat=" . $element . "\">" . $element . "</a></li>";
 	}
 	echo "</ul>";
 }
@@ -184,8 +185,8 @@ function unique_Category() {
 		global $xml;
 		global $test;
 		$i = 0;
-		$formcounter = 0;
-		
+		// $formcounter = 0;
+		echo "<form action=\"cart.php\" method=\"get\" name=\"name1\">";
 		foreach ($xml as $content):
 	
 			
@@ -198,20 +199,20 @@ function unique_Category() {
 					$size = $xml->category[$i]->name->attributes();
 					$price = $xml->category[$i]->price;
 					$item_id = $xml->category[$i]->id;
-					$formname = "form" . $formcounter;
+					// $formname = "form" . $formcounter;
 					$inputname = "qty" . $item_id;
 					
-					echo "<form action=\"cart.php\" method=\"get\" name=\"$formname\">";
+					
 					// echo "<p>Qty: <input name=\"qty" . $item_id . "\" type=\"text\" size=\"2\" maxlength=\"2\" onBlur=\"validate('". $formname . "')\">";
-					echo "<p>Qty: <input name=\"qty" . $item_id . "\" type=\"text\" size=\"2\" maxlength=\"2\">";
+					echo "<p>Qty: <input name=\"$item_id\" type=\"text\" size=\"2\" maxlength=\"2\">";
 					echo " Pizza Nr. " . $i . ": ";
 					echo $name;
 					echo " Price: " . $price . "$";
 					echo " Size: " . $size;
 					echo "<input type=\"radio\" name=\"size\" value=\"small\"> small";
 					echo "<input type=\"radio\" name=\"size\" value=\"large\"> large<br>";
-					echo "</form>";
-					$formcounter++;
+					
+					// $formcounter++;
 				}
 			
 			}
@@ -220,11 +221,12 @@ function unique_Category() {
 					
 				$typ = $xml->category[$i]->attributes();
 				if ($typ == 'spaghetti or ziti'){
-					echo "<p>Qty: <input name=\"qty\" type=\"text\" size=\"2\" maxlength=\"2\">";
+					echo "<p>Qty: <input name=\"$item_id\" type=\"text\" size=\"2\" maxlength=\"2\">";
 					echo "Dish Nr. " . $i . ": ";
 					$name = $xml->category[$i]->name;
 					$size = $xml->category[$i]->name->attributes();
 					$price = $xml->category[$i]->price;
+					$item_id = $xml->category[$i]->id;
 					echo $name;
 					echo " Price: " . $price;
 					echo " Size: " . $size . "<br>";
@@ -236,6 +238,8 @@ function unique_Category() {
 		endforeach;	
 		
 	}
+	echo "<input type=\"submit\" value=\"Order\">";
+	echo "</form>";
 	    
 ?>
 

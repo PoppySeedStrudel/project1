@@ -3,6 +3,6 @@
 	
 	unset($_SESSION['vorname']);
 	
-	echo "<a href=\"formtest.php\">back</a>";
+	echo "<a href=\"cart.php\">back</a>";
 
 ?>
