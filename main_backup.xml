@@ -1,147 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <menu>
-	<category typ="pizza">
+	<category typ="Pizza">
+	<id>0001</id>
 		<name size="small">Tomato and Cheese</name>
 		<price>5.50</price>
 	</category>
-	<category typ="pizza">
+	<category typ="Pizza">
+	<id>0002</id>
 		<name size="large">Tomato and Cheese</name>
 		<price>9.75</price>
 	</category>
-	<category typ="pizza">
+	<category typ="Pizza">
+	<id>0003</id>
 		<name size="small">Onions</name>
 		<price>6.85</price>
 	</category>
-	<category typ="pizza">
+	<category typ="Pizza">
+	<id>0004</id>
 		<name size="large">Onions</name>
 		<price>10.85</price>
 	</category>
-	<category typ="pizza">
+	<category typ="Pizza">
+	<id>0005</id>
 		<name size="small">Peppers</name>
 		<price>6.85</price>
 	</category>
-	<category typ="pizza">
-		<name size="small">Brocolli</name>
-		<price>6.85</price>
-	</category>
-	<category typ="pizza">
-		<name size="small">Fresh Garlic</name>
-		<price>6.85</price>
-	</category>
-	<category typ="pizza">
-		<name size="small">Mushrooms</name>
-		<price>6.85</price>
-	</category>
-		<category typ="pizza">
-		<name size="small">Fresh Spinach</name>
-		<price>6.85</price>
-	</category>
-		<category typ="pizza">
-		<name size="small">Anchovies</name>
-		<price>6.85</price>
-	</category>
-		<category typ="pizza">
-		<name size="small">Hamburg</name>
-		<price>6.85</price>
-	</category>
-		<category typ="pizza">
-		<name size="small">Pepperoni</name>
-		<price>6.85</price>
-	</category>
-		<category typ="pizza">
-		<name size="small">Sausage</name>
-		<price>6.85</price>
-	</category>
-		<category typ="pizza">
-		<name size="small">Meatball</name>
-		<price>6.85</price>
-	</category>
-		<category typ="pizza">
-		<name size="small">Grilled Chicken</name>
-		<price>7.95</price>
-	</category>
-		<category typ="pizza">
-		<name size="small">Hawaiian</name>
-		<price>7.95</price>
-	</category>
-		<category typ="pizza">
-		<name size="small">2-Way Combo</name>
-		<price>7.95</price>
-	</category>
-		<category typ="pizza">
-		<name size="small">3-Way Combo</name>
-		<price>8.90</price>
-	</category>
-		<category typ="pizza">
-		<name size="small">Extra Cheese</name>
-		<price>1.25</price>
-	</category>
-		<category typ="pizza">
+		<category typ="Pizza">
+		<id>0006</id>
 		<name size="large">Peppers</name>
 		<price>10.85</price>
 	</category>
-	<category typ="pizza">
-		<name size="large">Broccoli</name>
-		<price>10.85</price>
+	<category typ="Speciality Pizzas">
+	<id>0008</id>
+		<name size="large">Three Aces Special</name>
+		<price>15.80</price>
 	</category>
-	<category typ="pizza">
-		<name size="large">Fresh Garlic</name>
-		<price>10.85</price>
+	<category typ="Speciality Pizzas">
+	<id>0009</id>
+		<name size="small">Three Aces Special</name>
+		<price>9.80</price>
 	</category>
-	<category typ="pizza">
-		<name size="large">Mushrooms</name>
-		<price>10.85</price>
+	<category typ="Speciality Pizzas">
+	<id>0010</id>
+		<name size="large">Mediterranean</name>
+		<price>15.80</price>
 	</category>
-	<category typ="pizza">
-		<name size="large">Fresh Spinach</name>
-		<price>10.85</price>
+	<category typ="Speciality Pizzas">
+	<id>0011</id>
+		<name size="small">Three Aces Special</name>
+		<price>9.80</price>
 	</category>
-	<category typ="pizza">
-		<name size="large">Anchovies</name>
-		<price>10.85</price>
+	<category typ="Speciality Pizzas">
+	<id>0012</id>
+		<name size="large">Vegetarian</name>
+		<price>15.80</price>
 	</category>
-	<category typ="pizza">
-		<name size="large">Hamburg</name>
-		<price>10.85</price>
+	<category typ="Speciality Pizzas">
+	<id>0013</id>
+		<name size="large">Vegetarian</name>
+		<price>9.80</price>
 	</category>
-	<category typ="pizza">
-		<name size="large">Pepperoni</name>
-		<price>10.85</price>
+	<category typ="Speciality Pizzas">
+	<id>0014</id>
+		<name size="large">Three Aces Special</name>
+		<price>15.80</price>
 	</category>
-	<category typ="pizza">
-		<name size="large">Sausage</name>
-		<price>10.85</price>
+	<category typ="Special Dinners">
+	<id>0015</id>
+		<name size="">Chicken Wing Dinner</name>
+		<price>7.25</price>
 	</category>
-	<category typ="pizza">
-		<name size="large">Meatball</name>
-		<price>10.85</price>
+	
+	<category typ="Special Dinners">
+	<id>0016</id>
+		<name size="">Gyro Plate</name>
+		<price>7.25</price>
 	</category>
-	<category typ="pizza">
-		<name size="large">Grilled Chicken</name>
-		<price>11.80</price>
+	
+	<category typ="Special Dinners">
+	<id>0017</id>
+		<name size="">Chicken Finger Plate</name>
+		<price>7.25</price>
 	</category>
-	<category typ="pizza">
-		<name size="large">Hawaiian</name>
-		<price>11.80</price>
+	<category typ="Side Orders">
+	<id>0018</id>
+		<name size="small">Onions Rings</name>
+		<price>2.60</price>
 	</category>
-	<category typ="pizza">
-		<name size="large">2-Way Combo</name>
-		<price>11.80</price>
+		<category typ="Side Orders">
+	<id>0019</id>
+		<name size="large">Onions Rings</name>
+		<price>2.95</price>
 	</category>
-	<category typ="pizza">
-		<name size="large">3-Way Combo</name>
-		<price>12.80</price>
+		<category typ="Side Orders">
+	<id>0020</id>
+		<name size="small">French Fries</name>
+		<price>2.25</price>
 	</category>
-	<category typ="pizza">
-		<name size="large">Extra Cheese</name>
-		<price>1.85</price>
+		<category typ="Side Orders">
+	<id>0021</id>
+		<name size="large">French Fries</name>
+		<price>2.65</price>
 	</category>
-	<category typ="spaghetti or ziti">
-		<name size="">Spaghetti or ziti with sauce</name>
-		<price>5.40</price>
+	
+		<category typ="Side Orders">
+	<id>0022</id>
+		<name size="small">Spicy Fries</name>
+		<price>2.60</price>
 	</category>
-	<category typ="spaghetti or ziti">
-		<name size="">Spaghetti or ziti with sausage</name>
+		<category typ="Side Orders">
+	<id>0023</id>
+		<name size="small">Spicy Fries</name>
+		<price>2.95</price>
+	</category>
+	
+		<category typ="Salads">
+	<id>0024</id>
+		<name size="small">Garden</name>
+		<price>3.50</price>
+	</category>
+		<category typ="Salads">
+	<id>0025</id>
+		<name size="large">Garden</name>
+		<price>4.50</price>
+	</category>
+		<category typ="Salads">
+	<id>0026</id>
+		<name size="small">Greek</name>
+		<price>4.50</price>
+	</category>
+	
+		<category typ="Salads">
+	<id>0027</id>
+		<name size="large">Greek</name>
+		<price>5.50</price>
+	</category>
+		<category typ="Salads">
+	<id>0028</id>
+		<name size="small">Antipasto</name>
+		<price>4.50</price>
+	</category>
+		<category typ="Salads">
+	<id>0029</id>
+		<name size="large">Antipasto</name>
+		<price>5.50</price>
+	</category>
+	<category typ="Spaghetti or Ziti">
+	<id>0030</id>
+		<name size="">Spaghetti or Ziti with sausage</name>
 		<price>6.45</price>
 	</category>
+		<category typ="Spaghetti or Ziti">
+	<id>0031</id>
+		<name size="">Spaghetti or Ziti with Meat Ball</name>
+		<price>6.45</price>
+	</category>
+		<category typ="Spaghetti or Ziti">
+	<id>0032</id>
+		<name size="">Spaghetti or Ziti with Veal</name>
+		<price>6.45</price>
+	</category>
+	
 </menu>

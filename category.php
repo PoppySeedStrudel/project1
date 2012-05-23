@@ -1,5 +1,11 @@
 <?php
 
+//open xml file
+$myCategories = simplexml_load_file('main.xml');
+
+//initialize array for the categories
+$gesamt = array();
+
 function read_Categories() {
 
 	
@@ -7,7 +13,7 @@ function read_Categories() {
 	global $gesamt;
 
 	$i = 0;
-
+// go thru the xml and build up array over all categories $gesamt
 	foreach ($myCategories as $catInfo):
 
 	$test=$myCategories->category[$i]['typ'];
@@ -20,16 +26,17 @@ function read_Categories() {
 }
 
 //check,if function has been printed out. if not, print it out.
-function unique_Category() {
+function unique_Category($completearray) {
 
 	global $gesamt;
 
-	$result = array_unique($gesamt);
+	// $uniquearray = array_unique($gesamt);
+	$uniquearray = array_unique($completearray);
 	echo "<div id=\"fixiert\">";
 	echo "<ul id=\"Navigation\">";
-	foreach ($result as $element){
+	foreach ($uniquearray as $element){
 		//changed to category2
-		echo "<li><a href=\"category2.php?cat=" . $element . "\">" . $element . "</a></li>";
+		echo "<li><a href=\"category.php?cat=" . $element . "\">" . $element . "</a></li>";
 	}
 	echo "</ul>";
 }
@@ -154,14 +161,15 @@ function unique_Category() {
 </script>
 </head>
 <body>
+ 
 
 <div id="Scrollbereich">  <!-- erst fuer den folgenden Workaround benoetigt -->
   <h1>Welcome</h1>
 
   <div id="Inhalt">
  <!--    <form action="cart.php" method="get"> -->
- 
-<?php
+  
+  <?php
 /**
  * this script generates the main content of a category-page.
  * in the first step, it opens the main xml-file and reads the content.
@@ -171,10 +179,13 @@ function unique_Category() {
  * Date: 04.04.2012
  */
 
-
+	global $uniquearray;
+	
+	
 	// first step: open and read the xml-file
 	
 	$xml = simplexml_load_file('main.xml');
+	
 	$test = $_GET["cat"];
 	//second step: call function to read in all the Content from main.xml
 	read_Content();
@@ -183,56 +194,39 @@ function unique_Category() {
 	function read_Content() {
 
 		global $xml;
+
 		global $test;
+		
 		$i = 0;
-		// $formcounter = 0;
 		echo "<form action=\"cart.php\" method=\"get\" name=\"name1\">";
+					
 		foreach ($xml as $content):
 	
 			
-			if ($test == "pizza"){
+			
 				
 				$typ = $xml->category[$i]->attributes();
-				if ($typ == 'pizza'){
+		
 					
 					$name = $xml->category[$i]->name;
 					$size = $xml->category[$i]->name->attributes();
 					$price = $xml->category[$i]->price;
 					$item_id = $xml->category[$i]->id;
-					// $formname = "form" . $formcounter;
 					$inputname = "qty" . $item_id;
 					
 					
-					// echo "<p>Qty: <input name=\"qty" . $item_id . "\" type=\"text\" size=\"2\" maxlength=\"2\" onBlur=\"validate('". $formname . "')\">";
+				if ($typ == $test){
 					echo "<p>Qty: <input name=\"$item_id\" type=\"text\" size=\"2\" maxlength=\"2\">";
-					echo " Pizza Nr. " . $i . ": ";
+					
 					echo $name;
 					echo " Price: " . $price . "$";
-					echo " Size: " . $size;
+					
 					echo "<input type=\"radio\" name=\"size\" value=\"small\"> small";
 					echo "<input type=\"radio\" name=\"size\" value=\"large\"> large<br>";
-					
-					// $formcounter++;
 				}
+		
 			
-			}
-			
-			if ($test == "spaghetti or ziti"){
-					
-				$typ = $xml->category[$i]->attributes();
-				if ($typ == 'spaghetti or ziti'){
-					echo "<p>Qty: <input name=\"$item_id\" type=\"text\" size=\"2\" maxlength=\"2\">";
-					echo "Dish Nr. " . $i . ": ";
-					$name = $xml->category[$i]->name;
-					$size = $xml->category[$i]->name->attributes();
-					$price = $xml->category[$i]->price;
-					$item_id = $xml->category[$i]->id;
-					echo $name;
-					echo " Price: " . $price;
-					echo " Size: " . $size . "<br>";
-				
-				}
-			}
+
 					
 			$i++;
 		endforeach;	
@@ -246,17 +240,15 @@ function unique_Category() {
   </div>
 </div>
 
-
 <?php 
-
- $myCategories = simplexml_load_file('main.xml');
- $gesamt = array();
 
  read_Categories();
 
- unique_Category();
+ unique_Category($gesamt);
 
 ?>
+
+
  
 </div>
 
