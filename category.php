@@ -198,7 +198,7 @@ function unique_Category($completearray) {
 		global $test;
 		
 		$i = 0;
-		echo "<form action=\"cart.php\" method=\"get\" name=\"name1\">";
+		echo "<form action=\"confirm.php\" method=\"get\" name=\"name1\">";
 					
 		foreach ($xml as $content):
 	
