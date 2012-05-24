@@ -1,5 +1,30 @@
 <?php 
 
+function findoutproductname($id){
+	
+	if (file_exists('main.xml')) {
+		$xml = simplexml_load_file('main.xml');
+	} else {
+		exit('No data available');
+	}
+
+	$i = 0;
+	$product =  "Productname not found";
+	
+	// go thru the xml
+	foreach ($xml as $row):
+	
+	//check, if the id of the chosen product $id is equal to the id in the xml-row
+	if ($id == $xml->category[$i]->id){
+		$product = $xml->category[$i]->name;
+		}
+	$i++;
+	endforeach;
+	
+	return $product;
+	
+}
+
 // get the QUERY_STRING (the parameters) of the URL
 $url = $_SERVER['QUERY_STRING'];
 
@@ -22,10 +47,7 @@ foreach ($zweiterarray as $wert ):
 		$finalerarray[$key] = $value;
 	}
 endforeach;
-/** Testausgabe
-echo "finales array: ";
-print_r($finalerarray);
-**/
+
 
 //Storing the order in the cookie $_COOKIE["orders"]
 
@@ -50,8 +72,10 @@ $orders = unserialize($_COOKIE["orders"]);
 
 // print out data
 for ($i = 0; $i < sizeof($finalerarray); ++$i) {
-
-	echo "Product: ".key($finalerarray)." Amount: ".current($finalerarray)."<br>";
+	
+	$productname = findoutproductname(key($finalerarray));
+	
+	echo $productname . " - Amount: ".current($finalerarray)."<br>";
 
 	next($finalerarray);
 }
